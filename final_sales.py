@@ -241,7 +241,7 @@ for i in range(len(par)): #label encoding and scaling the parameters
     par[i]=dic[par[i]]
 st.write("\n")
 
-if st.checkbox("Predict"):
+if st.button("Predict"):
     pred=trees.predict([par])
     
     st.write("The Outlet Sales Value is:",pred[0])
