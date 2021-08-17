@@ -168,7 +168,7 @@ visible= st.slider("",min_value=0.0,max_value=1.0,value=0.1)
 st.subheader("Item categories:")
 types=st.radio("",['Fruits and Vegetables', 'Snack Foods', 'Household', 'Frozen Foods', 'Dairy', 'Canned', 'Baking Goods', 'Health and Hygiene', 'Soft Drinks', 'Meat', 'Breads', 'Hard Drinks', 'Others', 'Starchy Foods', 'Breakfast', 'Seafood'])
 
-st.subheader("MRF of the item:")
+st.subheader("MRP of the item:")
 mrp=st.number_input("",value=1.0)
 
 st.subheader("Outlet Identifier code:")
