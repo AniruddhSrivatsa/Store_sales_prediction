@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import streamlit as st
 import pickle
 import pandas as pd
@@ -21,7 +9,7 @@ new_title = '<p style="font-family:sans-serif; color:NAVY; font-size: 30px;">STO
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.subheader("Dataset:")
-df=pd.read_csv(r"C:\Users\Aniruddh Srivatsa\Videos\Train.csv")
+df=pd.read_csv("Train.csv")
 st.dataframe(data=df)
 st.write("\n")
 st.subheader("Description:")
@@ -263,7 +251,7 @@ dic={'Baking Goods': 6,
  'Tier 2': 1,
  'Tier 3': 0}
 
-trees=pickle.load(open(r"C:\Users\Aniruddh Srivatsa\Downloads\treex.pkl","rb"))
+trees=pickle.load(open("treex.pkl","rb"))
 par=[wei,fat,visible,types,mrp,out_id,year,ot,oloc,os] # parameters for the model
 
 for i in range(len(par)): #label encoding and scaling the parameters
