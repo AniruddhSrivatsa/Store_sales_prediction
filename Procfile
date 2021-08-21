@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run final_sales.py
+web: sh setup.sh && streamlit run sales_model.py
