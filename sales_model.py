@@ -167,7 +167,7 @@ st.write("\n")
 
 new_title = '<p style="font-family:sans-serif; color:DarkRed   ; font-size: 20px;">Visibility of the brand:</p>'
 st.markdown(new_title, unsafe_allow_html=True)
-visible= st.slider("",min_value=0.0,max_value=1.0,value=0.1)
+visible= st.slider("",min_value=0.0,max_value=1.0,value=0.05,step=0.05)
 st.write("\n")
 
 new_title = '<p style="font-family:sans-serif; color:DarkRed  ; font-size: 20px;">Item Categories</p>'
