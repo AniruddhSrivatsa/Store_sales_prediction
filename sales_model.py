@@ -188,7 +188,7 @@ st.write("\n")
 
 new_title = '<p style="font-family:sans-serif; color:DarkRed   ; font-size: 20px;">Outlet Est. Year:</p>'
 st.markdown(new_title, unsafe_allow_html=True)
-year_1=st.slider("",value=(1970,2020))
+year_1=st.slider("",min_value=1970,max_value=2020)
 year=2021-year_1
 st.write("\n")
 
