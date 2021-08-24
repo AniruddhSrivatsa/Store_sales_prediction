@@ -188,7 +188,8 @@ st.write("\n")
 
 new_title = '<p style="font-family:sans-serif; color:DarkRed   ; font-size: 20px;">Outlet Est. Year:</p>'
 st.markdown(new_title, unsafe_allow_html=True)
-year=int(st.number_input("",value=1988))
+year_1=st.slider("",min_value=1975,max_value=2020,value=1)
+year=2021-year_1
 st.write("\n")
 
 
@@ -207,7 +208,7 @@ st.markdown(new_title, unsafe_allow_html=True)
 os=st.selectbox("",['Supermarket Type1', 'Grocery Store', 'Supermarket Type3', 'Supermarket Type2'])
 st.write("\n")
 
-means=[12.813419570574444,0, 0.06613202877895127,0, 140.9927819781768,0, 1997.8318667135984,0,0,0]
+means=[12.813419570574444,0, 0.06613202877895127,0, 140.9927819781768,0, 23.168133286401503,0,0,0]
 stds=[4.226992409024986,0, 0.05159479525696192,0, 62.271413051361094,0, 8.37126926612472,0,0,0]
 
 # 0 in means and stds list are appended only for easier understanding when used in for loop below
